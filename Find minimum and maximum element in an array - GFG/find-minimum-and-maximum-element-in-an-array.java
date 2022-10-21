@@ -62,17 +62,17 @@ class Compute
 {
     static pair getMinMax(long a[], long n)  
     {
+        //initialize with the max and min value
         pair p = new pair(Long.MAX_VALUE, Long.MIN_VALUE);
         
+        
+        //compare with value to find min and max
         for(long elem: a){
-            if(p.first > elem){
+            if(p.first > elem)
                 p.first = elem;
-            }
             
-            
-            if(p.second < elem){
+            if(p.second < elem)
                 p.second = elem;
-            }
         }
         
         return p;
